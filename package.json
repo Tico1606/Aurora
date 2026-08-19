@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
+    "build": "next build",
     "dev": "next dev",
     "start": "next start",
-    "build": "next build",
     "migrate": "bunx supabase db push --linked",
     "seed:db": "bunx supabase db push --linked --include-seed",
     "seed:auth": "bun ./scripts/seed-auth.ts",
@@ -15,9 +15,10 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "test:coverage": "vitest run --coverage",
-    "pages:build": "npx @cloudflare/next-on-pages@1",
-    "pages:dev": "npx wrangler pages dev .vercel/output/static",
-    "pages:deploy": "npx wrangler pages deploy .vercel/output/static"
+    "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
+    "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy",
+    "upload": "opennextjs-cloudflare build && opennextjs-cloudflare upload",
+    "cf-typegen": "wrangler types --env-interface CloudflareEnv cloudflare-env.d.ts"
   },
   "dependencies": {
     "@radix-ui/react-slot": "1.2.4",
@@ -26,7 +27,7 @@
     "class-variance-authority": "0.7.1",
     "clsx": "2.1.1",
     "lucide-react": "1.8.0",
-    "next": "15.5.2",
+    "next": "16.3.1",
     "next-themes": "0.4.6",
     "radix-ui": "1.4.3",
     "react": "19.2.4",
@@ -42,7 +43,7 @@
   },
   "devDependencies": {
     "@biomejs/biome": "2.1.4",
-    "@cloudflare/next-on-pages": "1.13.16",
+    "@opennextjs/cloudflare": "1.20.2",
     "@tailwindcss/postcss": "4",
     "@testing-library/dom": "10.4.1",
     "@testing-library/jest-dom": "6.9.1",
@@ -59,6 +60,12 @@
     "vitest": "4.1.5",
     "wrangler": "4.124.0"
   },
-  "ignoreScripts": ["sharp", "unrs-resolver"],
-  "trustedDependencies": ["sharp", "unrs-resolver"]
+  "ignoreScripts": [
+    "sharp",
+    "unrs-resolver"
+  ],
+  "trustedDependencies": [
+    "sharp",
+    "unrs-resolver"
+  ]
 }
