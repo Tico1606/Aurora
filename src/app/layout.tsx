@@ -4,8 +4,6 @@ import '@/ui/global/styles/globals.css'
 import { RootLayout as AppRootLayout } from '@/ui/global/widgets/layouts/root-layout/index'
 import { cn } from '@/ui/shadcn/utils/utils'
 
-export const runtime = 'edge'
-
 const inter = Inter({
   subsets: ['latin'],
   weight: ['400', '500', '600', '700'],
