@@ -140,5 +140,4 @@ scripts/
   seed-auth.ts  # script de seed de usuários de teste
 documentation/
   architecture.md                        # decisões arquiteturais
-  POP-Desafio-Tecnico-Candidatos.pdf      # desafio técnico oficial
 ```
