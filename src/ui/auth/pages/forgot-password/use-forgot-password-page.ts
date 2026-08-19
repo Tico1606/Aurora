@@ -17,7 +17,7 @@ export function useForgotPasswordPage() {
     setIsSubmitting(true)
     await requestPasswordResetAction(email)
     setIsSubmitting(false)
-    setMessage('Se o email existir, enviaremos as instrucoes para redefinir sua senha.')
+    setMessage('Se o email existir, enviaremos as instruções para redefinir sua senha.')
     setCooldown(60)
 
     const interval = window.setInterval(() => {

@@ -29,7 +29,7 @@ describe('Modal', () => {
   it('trava o scroll do body ao abrir e restaura ao fechar', () => {
     renderWithProviders(
       <Modal title='Teste' trigger={<button type='button'>Abrir modal</button>}>
-        {() => <div>Conteudo do modal</div>}
+        {() => <div>Conteúdo do modal</div>}
       </Modal>,
     )
 
@@ -40,7 +40,7 @@ describe('Modal', () => {
 
     expect(document.body.style.overflow).toBe('hidden')
     expect(document.body.style.paddingRight).toBe('20px')
-    expect(screen.getByText('Conteudo do modal')).toBeInTheDocument()
+    expect(screen.getByText('Conteúdo do modal')).toBeInTheDocument()
 
     act(() => {
       fireEvent.click(screen.getAllByRole('button', { name: 'Fechar modal' })[1])
@@ -57,10 +57,10 @@ describe('Modal', () => {
     expect(document.body.style.paddingRight).toBe('')
   })
 
-  it('mantem o corpo do modal sem scroll antes do fim da animacao de abertura', () => {
+  it('mantém o corpo do modal sem scroll antes do fim da animação de abertura', () => {
     renderWithProviders(
       <Modal title='Teste' trigger={<button type='button'>Abrir modal</button>}>
-        {() => <div>Conteudo do modal</div>}
+        {() => <div>Conteúdo do modal</div>}
       </Modal>,
     )
 
@@ -68,7 +68,7 @@ describe('Modal', () => {
       fireEvent.click(screen.getByRole('button', { name: 'Abrir modal' }))
     })
 
-    const contentWrapper = screen.getByText('Conteudo do modal').parentElement
+    const contentWrapper = screen.getByText('Conteúdo do modal').parentElement
 
     expect(contentWrapper).toHaveClass('overflow-y-hidden')
     expect(contentWrapper).not.toHaveClass('overflow-y-auto')
@@ -95,7 +95,7 @@ describe('Modal', () => {
             setCount((current) => current + 1)
           }}
         >
-          {() => <div>Conteudo do modal</div>}
+          {() => <div>Conteúdo do modal</div>}
         </Modal>
       )
     }

@@ -41,7 +41,7 @@ export function ProfilePageView() {
 
   const savePassword = async () => {
     if (password.length < 8) {
-      toast.error('A senha deve ter no minimo 8 caracteres.')
+      toast.error('A senha deve ter no mínimo 8 caracteres.')
       return
     }
 

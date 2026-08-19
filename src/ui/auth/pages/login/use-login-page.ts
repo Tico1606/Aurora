@@ -46,7 +46,7 @@ export function useLoginPage() {
       })
     } catch (error) {
       setFormErrors({
-        form: error instanceof Error ? error.message : 'Nao foi possivel fazer login.',
+        form: error instanceof Error ? error.message : 'Não foi possível fazer login.',
       })
     } finally {
       setIsSubmitting(false)

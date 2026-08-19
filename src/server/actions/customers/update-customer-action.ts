@@ -24,7 +24,7 @@ export async function updateCustomerAction({ id, ...payload }: UpdateCustomerInp
     .maybeSingle()
 
   if (duplicatedProfile) {
-    return { ok: false, message: 'Ja existe uma conta com este email.' }
+    return { ok: false, message: 'Já existe uma conta com este email.' }
   }
 
   const { error: authError } = await admin.auth.admin.updateUserById(id, {

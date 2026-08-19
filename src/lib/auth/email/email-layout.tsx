@@ -49,7 +49,7 @@ export function renderEmailLayout({ preheader, title, contentHtml }: EmailLayout
                 <tr>
                   <td style="padding:20px 32px 28px;border-top:1px solid #EEF1F4;">
                     <p style="margin:0;font-size:12px;line-height:1.6;color:${EMAIL_BRAND_MUTED};">
-                      Voce esta recebendo este email porque possui uma conta na ${EMAIL_BRAND_NAME}. Se nao reconhece esta acao, pode ignorar esta mensagem com seguranca.
+                      Você está recebendo este email porque possui uma conta na ${EMAIL_BRAND_NAME}. Se não reconhece esta ação, pode ignorar esta mensagem com segurança.
                     </p>
                   </td>
                 </tr>

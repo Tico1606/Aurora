@@ -19,7 +19,7 @@ export async function createSupabaseServerClient() {
               cookieStore.set(name, value, options)
             }
           } catch {
-            // Ignorado quando chamado em server components sem permissao de escrita.
+            // Ignorado quando chamado em server components sem permissão de escrita.
           }
         },
       },

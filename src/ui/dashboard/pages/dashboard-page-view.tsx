@@ -17,7 +17,7 @@ const cards = [
   {
     key: 'activeClientsCount',
     title: 'Clientes ativos',
-    description: 'Clientes que ja confirmaram o email e estao ativos.',
+    description: 'Clientes que já confirmaram o email e estão ativos.',
   },
   {
     key: 'customersCount',
@@ -32,7 +32,7 @@ export function DashboardPageView({ summary }: Props) {
       <div>
         <h1 className='text-2xl font-semibold text-foreground'>Dashboard</h1>
         <p className='text-sm text-muted-foreground'>
-          Resumo rapido da administracao da plataforma.
+          Resumo rápido da administração da plataforma.
         </p>
       </div>
 

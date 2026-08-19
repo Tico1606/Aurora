@@ -20,12 +20,12 @@ export function useResetPasswordPage() {
     setMessage('')
 
     if (!token) {
-      setError('Link de redefinicao invalido.')
+      setError('Link de redefinição inválido.')
       return
     }
 
     if (password.length < 8) {
-      setError('A senha deve ter no minimo 8 caracteres.')
+      setError('A senha deve ter no mínimo 8 caracteres.')
       return
     }
 
@@ -39,7 +39,7 @@ export function useResetPasswordPage() {
     setIsSubmitting(false)
 
     if (!result.ok) {
-      setError(result.message ?? 'Nao foi possivel redefinir a senha.')
+      setError(result.message ?? 'Não foi possível redefinir a senha.')
       return
     }
 

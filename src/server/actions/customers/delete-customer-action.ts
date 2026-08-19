@@ -19,7 +19,7 @@ export async function deleteCustomerAction(id: string) {
   }
 
   if (!profile) {
-    return { ok: false, message: 'Cliente nao encontrado.' }
+    return { ok: false, message: 'Cliente não encontrado.' }
   }
 
   const { error } = await admin.auth.admin.deleteUser(id)

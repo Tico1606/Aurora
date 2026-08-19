@@ -14,7 +14,7 @@ export async function resetPasswordAction(token: string, password: string) {
     .maybeSingle()
 
   if (error || !row || row.used_at || row.expires_at < now) {
-    return { ok: false, message: 'Link de redefinicao invalido ou expirado.' }
+    return { ok: false, message: 'Link de redefinição inválido ou expirado.' }
   }
 
   const { error: resetError } = await admin.auth.admin.updateUserById(row.user_id, {

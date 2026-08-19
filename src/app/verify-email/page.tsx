@@ -12,7 +12,7 @@ type Props = {
 export default async function Page({ searchParams }: Props) {
   const params = await searchParams
   const token = params.token ?? ''
-  const result = token ? await verifyEmailAction(token) : { ok: false, message: 'Link de confirmacao invalido.' }
+  const result = token ? await verifyEmailAction(token) : { ok: false, message: 'Link de confirmação inválido.' }
 
   return (
     <div
@@ -31,10 +31,10 @@ export default async function Page({ searchParams }: Props) {
 
         <Card className='w-full border border-white/10 bg-white/5 text-white shadow-2xl shadow-black/30 backdrop-blur'>
           <CardHeader className='text-center'>
-            <CardTitle>{result.ok ? 'Conta ativada' : 'Nao foi possivel ativar a conta'}</CardTitle>
+            <CardTitle>{result.ok ? 'Conta ativada' : 'Não foi possível ativar a conta'}</CardTitle>
           </CardHeader>
           <CardContent className='text-center text-sm text-[#C8CED3]'>
-            {result.ok ? 'Sua conta foi confirmada com sucesso. Agora voce ja pode entrar na plataforma.' : result.message}
+            {result.ok ? 'Sua conta foi confirmada com sucesso. Agora você já pode entrar na plataforma.' : result.message}
           </CardContent>
           <CardFooter>
             <Button asChild type='button' className='w-full'>

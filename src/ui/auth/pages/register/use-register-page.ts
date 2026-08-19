@@ -51,11 +51,11 @@ export function useRegisterPage() {
 
     if (!formData.name.trim()) errors.name = 'Informe seu nome.'
     if (!formData.email.trim()) errors.email = 'Informe seu email.'
-    else if (!isValidEmail(formData.email.trim())) errors.email = 'Email invalido.'
+    else if (!isValidEmail(formData.email.trim())) errors.email = 'Email inválido.'
     if (!digitsOnly(formData.phone)) errors.phone = 'Informe seu telefone.'
     if (!formData.password) errors.password = 'Informe sua senha.'
     else if (!isValidPassword(formData.password))
-      errors.password = 'A senha deve ter no minimo 8 caracteres.'
+      errors.password = 'A senha deve ter no mínimo 8 caracteres.'
     if (formData.confirmPassword !== formData.password) {
       errors.confirmPassword = 'As senhas precisam ser iguais.'
     }

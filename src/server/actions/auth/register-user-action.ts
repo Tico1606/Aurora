@@ -28,7 +28,7 @@ export async function registerUserAction({
     .maybeSingle()
 
   if (existingProfile) {
-    return { ok: false, message: 'Ja existe uma conta com este email.' }
+    return { ok: false, message: 'Já existe uma conta com este email.' }
   }
 
   const { count } = await admin
@@ -48,7 +48,7 @@ export async function registerUserAction({
   })
 
   if (error || !data.user) {
-    return { ok: false, message: error?.message ?? 'Nao foi possivel criar a conta.' }
+    return { ok: false, message: error?.message ?? 'Não foi possível criar a conta.' }
   }
 
   const { error: profileError } = await admin.from('profiles').upsert({

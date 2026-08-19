@@ -117,7 +117,7 @@ export const RegisterPageView = () => {
 
       <CardFooter className='flex-col px-0 pb-0 pt-6 text-center text-sm text-[#C8CED3]'>
         <p>
-          Ja tem uma conta?{' '}
+          Já tem uma conta?{' '}
           <Link
             href={ROUTES.auth.login}
             className='font-semibold text-[#4FB4F2] hover:underline'

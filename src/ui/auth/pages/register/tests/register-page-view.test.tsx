@@ -16,7 +16,7 @@ vi.mock('@/server/actions/auth/register-user-action', () => ({
 }))
 
 describe('RegisterPageView', () => {
-  it('mostra erro quando as senhas sao diferentes', async () => {
+  it('mostra erro quando as senhas são diferentes', async () => {
     const user = userEvent.setup()
     renderWithProviders(<RegisterPageView />)
 

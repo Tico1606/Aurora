@@ -27,7 +27,7 @@ export async function loginAction({ email, password }: LoginInput): Promise<Logi
     .maybeSingle()
 
   if (profileError || !profile) {
-    return { ok: false, statusCode: 401, message: 'Email ou senha invalidos.' }
+    return { ok: false, statusCode: 401, message: 'Email ou senha inválidos.' }
   }
 
   if (profile.status === 'pending') {
@@ -40,7 +40,7 @@ export async function loginAction({ email, password }: LoginInput): Promise<Logi
     return {
       ok: false,
       statusCode: 403,
-      message: 'Sua conta ainda esta pendente. Enviamos um novo email de ativacao.',
+      message: 'Sua conta ainda está pendente. Enviamos um novo email de ativação.',
     }
   }
 
@@ -48,7 +48,7 @@ export async function loginAction({ email, password }: LoginInput): Promise<Logi
     return {
       ok: false,
       statusCode: 403,
-      message: 'Sua conta esta desativada. Fale com o administrador.',
+      message: 'Sua conta está desativada. Fale com o administrador.',
     }
   }
 
@@ -59,7 +59,7 @@ export async function loginAction({ email, password }: LoginInput): Promise<Logi
   })
 
   if (error) {
-    return { ok: false, statusCode: 401, message: 'Email ou senha invalidos.' }
+    return { ok: false, statusCode: 401, message: 'Email ou senha inválidos.' }
   }
 
   return {

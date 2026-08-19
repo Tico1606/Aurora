@@ -14,7 +14,7 @@ export async function verifyEmailAction(token: string) {
     .maybeSingle()
 
   if (error || !row || row.used_at || row.expires_at < now) {
-    return { ok: false, message: 'Link de confirmacao invalido ou expirado.' }
+    return { ok: false, message: 'Link de confirmação inválido ou expirado.' }
   }
 
   const { error: confirmError } = await admin.auth.admin.updateUserById(row.user_id, {

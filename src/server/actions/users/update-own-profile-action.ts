@@ -18,7 +18,7 @@ export async function updateOwnProfileAction({
   const currentUser = await getCurrentUser()
 
   if (!currentUser) {
-    return { ok: false, message: 'Sessao expirada.' }
+    return { ok: false, message: 'Sessão expirada.' }
   }
 
   const admin = createSupabaseAdminClient()
@@ -31,7 +31,7 @@ export async function updateOwnProfileAction({
     .maybeSingle()
 
   if (duplicatedProfile) {
-    return { ok: false, message: 'Ja existe uma conta com este email.' }
+    return { ok: false, message: 'Já existe uma conta com este email.' }
   }
 
   const { error: authError } = await admin.auth.admin.updateUserById(currentUser.id, {

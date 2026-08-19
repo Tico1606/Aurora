@@ -11,7 +11,7 @@ vi.mock('@/ui/auth/contexts/auth-context/hooks/use-auth-context', () => ({
 }))
 
 describe('LoginPageView', () => {
-  it('valida campos obrigatorios', async () => {
+  it('valida campos obrigatórios', async () => {
     const user = userEvent.setup()
     renderWithProviders(<LoginPageView />)
 
@@ -21,7 +21,7 @@ describe('LoginPageView', () => {
     expect(screen.getByText('Informe sua senha.')).toBeInTheDocument()
   })
 
-  it('envia login quando o formulario esta valido', async () => {
+  it('envia login quando o formulário está válido', async () => {
     const user = userEvent.setup()
     renderWithProviders(<LoginPageView />)
 

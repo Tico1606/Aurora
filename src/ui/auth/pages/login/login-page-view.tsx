@@ -130,7 +130,7 @@ export const LoginPageView = () => {
               Esqueci minha senha
             </Link>
             <p>
-              Ainda nao tem conta?{' '}
+              Ainda não tem conta?{' '}
               <Link
                 href={ROUTES.auth.register}
                 className='font-semibold text-[#4FB4F2] hover:underline'

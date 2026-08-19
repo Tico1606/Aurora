@@ -11,7 +11,7 @@ vi.mock('@/server/actions/auth/request-password-reset-action', () => ({
 }))
 
 describe('ForgotPasswordPageView', () => {
-  it('mostra mensagem generica apos solicitar reset', async () => {
+  it('mostra mensagem genérica após solicitar reset', async () => {
     const user = userEvent.setup()
     renderWithProviders(<ForgotPasswordPageView />)
 
@@ -21,7 +21,7 @@ describe('ForgotPasswordPageView', () => {
     expect(requestPasswordResetActionMock).toHaveBeenCalledWith('user@example.com')
     expect(
       await screen.findByText(
-        'Se o email existir, enviaremos as instrucoes para redefinir sua senha.',
+        'Se o email existir, enviaremos as instruções para redefinir sua senha.',
       ),
     ).toBeInTheDocument()
   })

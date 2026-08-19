@@ -25,7 +25,7 @@ export const RegisterSuccessPageView = () => {
       </CardHeader>
 
       <CardContent className='space-y-4 px-0 text-center text-[#C8CED3]'>
-        <p>Enviamos um link de confirmacao para ativar sua conta.</p>
+        <p>Enviamos um link de confirmação para ativar sua conta.</p>
         {!!email && <p className='break-all text-sm text-[#C8CED3]/80'>{email}</p>}
       </CardContent>
 
@@ -37,7 +37,7 @@ export const RegisterSuccessPageView = () => {
           disabled={!email}
           onClick={() => void resendVerificationAction(email)}
         >
-          Reenviar email de ativacao
+          Reenviar email de ativação
         </Button>
         <Button
           asChild

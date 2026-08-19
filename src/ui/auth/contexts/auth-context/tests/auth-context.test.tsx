@@ -42,7 +42,7 @@ const initialUser: CurrentUser = {
 }
 
 describe('AuthContextProvider', () => {
-  it('hidrata o usuario inicial', () => {
+  it('hidrata o usuário inicial', () => {
     renderWithProviders(
       <AuthContextProvider initialUser={initialUser}>
         <Probe />
@@ -52,7 +52,7 @@ describe('AuthContextProvider', () => {
     expect(screen.getByText('admin@example.com')).toBeInTheDocument()
   })
 
-  it('remove o usuario ao fazer logout', async () => {
+  it('remove o usuário ao fazer logout', async () => {
     const { logoutAction } = await import('@/server/actions/auth/logout-action')
     vi.mocked(logoutAction).mockResolvedValue(undefined)
 

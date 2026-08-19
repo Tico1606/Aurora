@@ -40,25 +40,25 @@ const pageCopy = {
     },
     hero: {
       badge: 'Plataforma web com Supabase',
-      title: 'Gestao de clientes simples, segura e pronta para evoluir.',
+      title: 'Gestão de clientes simples, segura e pronta para evoluir.',
       description:
-        'A Aurora centraliza login, dashboard, cadastro de clientes e configuracoes de conta em uma experiencia direta para operacoes pequenas e medias.',
+        'A Aurora centraliza login, dashboard, cadastro de clientes e configurações de conta em uma experiência direta para operações pequenas e médias.',
       differentiators: [
-        'Autenticacao por email e senha para proteger a area interna.',
+        'Autenticação por email e senha para proteger a área interna.',
         'CRUD completo de clientes com nome, contato, status e data de cadastro.',
-        'Configuracoes para o usuario logado editar nome, email e senha.',
+        'Configurações para o usuário logado editar nome, email e senha.',
       ],
     },
     workflowCard: {
       badge: 'Fluxo principal',
       eyebrow: 'Home -> Login -> Dashboard',
-      title: 'Tudo organizado no caminho esperado do desafio tecnico.',
+      title: 'Tudo organizado no caminho esperado do desafio técnico.',
       description:
-        'O usuario conhece a plataforma, entra com credenciais e acessa as ferramentas privadas de gestao.',
+        'O usuário conhece a plataforma, entra com credenciais e acessa as ferramentas privadas de gestão.',
       steps: [
         {
           title: 'Entrar',
-          description: 'Autenticacao com Supabase Auth usando email e senha.',
+          description: 'Autenticação com Supabase Auth usando email e senha.',
         },
         {
           title: 'Gerenciar clientes',
@@ -66,76 +66,76 @@ const pageCopy = {
         },
         {
           title: 'Atualizar conta',
-          description: 'Editar nome, email e senha na tela de configuracoes.',
+          description: 'Editar nome, email e senha na tela de configurações.',
         },
       ],
     },
     servicesSection: {
       badge: 'Recursos essenciais',
-      title: 'O minimo completo para uma plataforma funcional de gestao.',
+      title: 'O mínimo completo para uma plataforma funcional de gestão.',
       description:
-        'A interface prioriza clareza, estados simples e operacoes reais conectadas ao banco Supabase.',
+        'A interface prioriza clareza, estados simples e operações reais conectadas ao banco Supabase.',
       items: [
         {
-          title: 'Home publica',
+          title: 'Home pública',
           description:
-            'Apresentacao breve do sistema com chamada para acessar a area de login.',
+            'Apresentação breve do sistema com chamada para acessar a área de login.',
         },
         {
           title: 'Login seguro',
           description:
-            'Entrada e saida de usuarios com sessao protegida por Supabase Auth.',
+            'Entrada e saída de usuários com sessão protegida por Supabase Auth.',
         },
         {
           title: 'Dashboard privado',
-          description: 'Area visivel somente para usuarios autenticados.',
+          description: 'Área visível somente para usuários autenticados.',
         },
         {
           title: 'Cadastro de clientes',
           description:
-            'Formulario para criar clientes com dados essenciais de contato e status.',
+            'Formulário para criar clientes com dados essenciais de contato e status.',
         },
         {
-          title: 'Lista e edicao',
-          description: 'Tabela com a base cadastrada, acoes de edicao e exclusao.',
+          title: 'Lista e edição',
+          description: 'Tabela com a base cadastrada, ações de edição e exclusão.',
         },
         {
-          title: 'Configuracoes',
-          description: 'Tela para o usuario logado manter os proprios dados atualizados.',
+          title: 'Configurações',
+          description: 'Tela para o usuário logado manter os próprios dados atualizados.',
         },
       ],
     },
     clientArea: {
-      badge: 'Area exclusiva',
+      badge: 'Área exclusiva',
       title: 'Dashboard focado no que o desafio pede.',
       description:
-        'A area privada concentra indicadores simples, gestao de clientes e configuracoes da conta.',
+        'A área privada concentra indicadores simples, gestão de clientes e configurações da conta.',
       items: [
         {
-          title: 'Clientes em um so lugar',
+          title: 'Clientes em um só lugar',
           description:
             'Visualize contatos, acompanhe status e mantenha o cadastro organizado.',
         },
         {
-          title: 'Operacoes diretas',
-          description: 'Acoes de criar, editar e excluir sem camadas desnecessarias.',
+          title: 'Operações diretas',
+          description: 'Ações de criar, editar e excluir sem camadas desnecessárias.',
         },
         {
           title: 'Conta atualizada',
           description:
-            'Dados do usuario logado ficam acessiveis na tela de configuracoes.',
+            'Dados do usuário logado ficam acessíveis na tela de configurações.',
         },
       ],
     },
     quote: {
-      badges: ['Autenticacao', 'Clientes', 'Configuracoes'],
-      text: '"A Aurora foi desenhada para demonstrar um fluxo completo: acesso seguro, dados persistidos e operacoes reais de gestao."',
+      badges: ['Autenticação', 'Clientes', 'Configurações'],
+      text: '"A Aurora foi desenhada para demonstrar um fluxo completo: acesso seguro, dados persistidos e operações reais de gestão."',
       author: 'Aurora',
-      role: 'Desafio Tecnico',
+      role: 'Desafio Técnico',
     },
     footer: {
       description:
-        'Plataforma web para login, dashboard, CRUD de clientes e configuracoes de usuario.',
+        'Plataforma web para login, dashboard, CRUD de clientes e configurações de usuário.',
       precision: 'Funcionalidade real, escopo claro e base pronta para evoluir.',
       columns: [
         {
@@ -163,7 +163,7 @@ const pageCopy = {
           ],
         },
       ],
-      copyright: '© 2026 Aurora. Gestao de clientes com simplicidade.',
+      copyright: '© 2026 Aurora. Gestão de clientes com simplicidade.',
     },
   },
   EN: {

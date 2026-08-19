@@ -43,7 +43,7 @@ function renderSidebarProvider(props?: { allowDesktopToggle?: boolean }) {
 }
 
 describe('SidebarProvider', () => {
-  it('nao fecha a sidebar no desktop quando o toggle estiver desabilitado', async () => {
+  it('não fecha a sidebar no desktop quando o toggle estiver desabilitado', async () => {
     const user = userEvent.setup()
 
     setViewport(1280)
@@ -63,7 +63,7 @@ describe('SidebarProvider', () => {
     ).not.toBeInTheDocument()
   })
 
-  it('mantem a sidebar mobile fechada por padrao e abre ao clicar no botao', async () => {
+  it('mantém a sidebar mobile fechada por padrão e abre ao clicar no botão', async () => {
     const user = userEvent.setup()
 
     setViewport(375)

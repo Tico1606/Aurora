@@ -7,7 +7,7 @@ export async function updateOwnPasswordAction(password: string) {
   const currentUser = await getCurrentUser()
 
   if (!currentUser) {
-    return { ok: false, message: 'Sessao expirada.' }
+    return { ok: false, message: 'Sessão expirada.' }
   }
 
   const supabase = await createSupabaseServerClient()

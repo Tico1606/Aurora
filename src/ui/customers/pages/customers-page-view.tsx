@@ -305,7 +305,7 @@ export function CustomersPageView() {
             <div>
               <CardTitle>Clientes</CardTitle>
               <CardDescription>
-                Lista de perfis com role client, incluindo pendentes de confirmacao.
+                Lista de perfis com role client, incluindo pendentes de confirmação.
               </CardDescription>
             </div>
             <Button type='button' className='cursor-pointer' onClick={openCreateModal}>

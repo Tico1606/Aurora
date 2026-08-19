@@ -23,7 +23,7 @@ export async function createCustomerAction(input: CreateCustomerInput) {
     .maybeSingle()
 
   if (existingProfile) {
-    return { ok: false, message: 'Ja existe uma conta com este email.' }
+    return { ok: false, message: 'Já existe uma conta com este email.' }
   }
 
   const { data, error } = await admin.auth.admin.createUser({
@@ -38,7 +38,7 @@ export async function createCustomerAction(input: CreateCustomerInput) {
   })
 
   if (error || !data.user) {
-    return { ok: false, message: error?.message ?? 'Nao foi possivel criar o cliente.' }
+    return { ok: false, message: error?.message ?? 'Não foi possível criar o cliente.' }
   }
 
   const { error: profileError } = await admin.from('profiles').upsert({
@@ -64,6 +64,6 @@ export async function createCustomerAction(input: CreateCustomerInput) {
 
   return {
     ok: true,
-    message: 'Cliente criado. Enviamos um email de confirmacao para ativar a conta.',
+    message: 'Cliente criado. Enviamos um email de confirmação para ativar a conta.',
   }
 }

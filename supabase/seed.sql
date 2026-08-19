@@ -1,3 +1,3 @@
 -- Seed relacional seguro para ambiente remoto.
--- Clientes sao contas autenticaveis em public.profiles com role = 'client'.
--- O seed de autenticacao vive em scripts/seed-auth.ts.
+-- Clientes são contas autenticáveis em public.profiles com role = 'client'.
+-- O seed de autenticação vive em scripts/seed-auth.ts.
